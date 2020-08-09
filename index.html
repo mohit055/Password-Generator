@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon-password-generator.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <input class="password-display" aria-disabled="true" spellcheck="false" maxlength="30"
+                placeholder="Password"></input> <button id="btn-copy">Copy</button>
+        </div>
+        <form class="form">
+            <label for="characterAmountNumber">Number of Characters</label>
+            <div><input type="range" id="characterAmountRange" min="1" max="30" value="10"> <input type="number"
+                    id="characterAmountNumber" min="1" max="30" value="10">
+            </div>
+            <label for="includeUppercase">Include Uppercase</label> <input type="checkbox" id="includeUppercase">
+            <label for="includeNumbers">Include Number</label> <input type="checkbox" id="includeNumbers">
+            <label for="includeSymbols">Include Symbols</label> <input type="checkbox" id="includeSymbols">
+            <button type="submit" id="btn-generate-password">Generate Password</button>
+        </form>
+        <a href="guide.html">Guide to protect your Privacy.</a>
+    </div>
+</body>
+
+</html>
